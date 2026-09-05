@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="nav-test">
+      <a href="/">/ (home)</a> | <a href="/contact">/contact</a> | <a href="/about">/about</a> |
+      <a href="/nope">/nope (404 test)</a>
+      <hr />
+    </div>
+
+    <script>
+      const p = document.createElement('p');
+      p.innerHTML = 'Path: ' + location.pathname;
+      document.body.appendChild(p);
+    </script>
+    <h1>Home</h1>
+  </body>
+</html>
